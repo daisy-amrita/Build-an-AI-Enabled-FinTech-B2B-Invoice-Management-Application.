@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  color: white !important;
+}
+*{
+  --backgroundColor:#666666;
+  --tableTextColor:white;
+  --HRCorange:#FC7500;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.MuiInputLabel-outlined{
+  color: var(--HRCorange)!important;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: white;
+  /* width: 100%; */
+}
+.MuiFilledInput-underline:before ,.MuiFilledInput-underline, .MuiFilledInput-underline::after{
+  all:unset !important;
+}
+.MuiAppBar-colorPrimary{
+  background-color: #666666 !important;
+}
+.footer>*{
+  padding:  0 4px;
+}
+.hrclogo{
+  height: 30px;
+  position: absolute;
+  left: calc( 50% - 50px);
+  justify-items: center;
+}
+.abclogo{
+  height: 30px;
+}
+.header{
+  padding-top: 8px;
+  padding-left: 2px;
+  position: relative;
+  display: flex;
+  top: 0;
+  justify-content: space-between;
+}
+.tab-container{
+  flex-grow: 1;
+  height: 100%;
+  background-color: var(--backgroundColor);
+  position: relative;
+}
+.tabpanel{
+  /* position: absolute; */
+  height: calc(100vh - 137px);
+}
+.MuiTabs-flexContainer{
+  background-color: var(--backgroundColor);
+}
+.Mui-disabled.MuiButtonBase-root{
+  background-color: #755d49 !important;
+}
+.main-container{
+  display: flex;
+  flex-direction:column;
+}
+.MuiToolbar-root,.MuiDataGrid-columnHeaderTitle,.MuiDataGrid-cell,.MuiToolbar-rootw{
+  color: var(--tableTextColor) ;
+}
+.MuiDataGrid-columnHeaderTitle{
+  line-height: 1 !important;
+  white-space: normal !important;
+}
+.MuiCheckbox-colorPrimary.Mui-checked{
+  color:#FC7500 !important;
+}
+.MuiDataGrid-root .MuiDataGrid-columnHeader:focus, .MuiDataGrid-root .MuiDataGrid-cell:focus{
+  outline:unset !important;
+}
+.App-header {
+  background-color: var(--backgroundColor);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
